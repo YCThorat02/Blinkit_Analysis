@@ -5,6 +5,26 @@ This project focuses on analyzing Blinkit's sales and delivery performance using
 ### Tools Used 
 ![power bi](https://github.com/user-attachments/assets/8edc834c-14de-48fa-ba49-682d10575ab3)
 
+### Data Preparation and DAX Implementation
+During the data preparation phase, several transformations were performed using Power BI's Power Query Editor. A new column was added to extract the hour from the datetime field, allowing for time-based analysis of order patterns. Additionally, a custom column was created to calculate the actual discount value by subtracting the selling price from the MRP.
+
+### In the modeling phase, several key measures were developed using DAX:
+Total Revenue: Calculated by summing the 'Price' column.
+
+### Total Orders: 
+Measured using a count of 'Order ID'.
+
+### Average Delivery Time: 
+Derived using the average of the 'Delivery Time' column.
+
+### Discount Percentage: 
+Calculated by dividing the total discount amount by the total MRP.
+
+### Total Quantity: 
+Computed using the RELATED function to retrieve the quantity from a related table and summarize it appropriately.
+
+These measures and transformations enable detailed analysis across various dimensions such as time, customer behavior, and product performance.
+
 ### Key features 
 ### Year 2023 Overview
 Revenue: $5.45 million:
